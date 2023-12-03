@@ -1,0 +1,26 @@
+@import "colors";
+@mixin custom($f-s, $f-w, $color){
+    font-size: $f-s;
+    font-weight: $f-w;
+    color: $color;
+}
+@mixin lg-text{
+    font-size: 26px;
+    font-weight: 700;
+    color: $dark-blue;
+}
+@mixin md-text{
+    font-size: 22px;
+    font-weight: 700;
+    color: $dark-blue;
+}
+@mixin sm-text{
+    font-size: 15px;
+    font-weight: 400;
+    color: $cornflowerblue;
+}
+@mixin xs-text{
+    font-size: 13px;
+    font-weight: 400;
+    color: $cornflowerblue;
+}

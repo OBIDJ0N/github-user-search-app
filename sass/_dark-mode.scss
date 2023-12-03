@@ -1,0 +1,76 @@
+body.dark{
+    background-color: $black;
+    .main .container .wrapper .header_content .header_content-title{
+        color: $light;
+    }
+    .main .container .wrapper .header_content .mode_switcher{
+        &:hover{
+            .mode_switcher-text {
+                color: $midnight-blue;
+            }
+            .mode_switcher-img g path{
+                fill: $midnight-blue;
+            }
+        }
+       .mode_switcher-text {
+            color: $light;
+        }
+        .mode_switcher-img g path{
+            fill: $light;
+        }
+    }
+    .main .container .wrapper .header_content .search{
+        background-color: $night-blue;
+    }
+    .main .container .wrapper .header_content .search{
+        box-shadow: none;
+        #search_users{
+            color: $light;
+            &::placeholder{
+                color: $light;
+            }
+        }
+    }
+    .main .container .wrapper .main_content{
+        background-color: $night-blue;
+    }
+    .main .container .wrapper .main_content .about_user .right_items{
+        .header_item {
+        .github_name,.github_date{
+            color: $light;
+        }
+    }
+        .github_bio{
+            color: $gray;
+        }
+    }
+    .main .container .wrapper .main_content .about_user .account_info{
+        background-color: $black;
+        .account_info-item {
+            p,h2{
+                color: $light;
+
+            }
+        }
+    }
+    .main .container .wrapper .main_content .about_user .account_details, .about_user.active .account_details 
+    {
+        .account_details-left, .account_details-right {
+        .account_details-item{
+            svg g path, p, a{
+                fill: $light;
+                color: $light;
+            }
+            .account_link{
+                color: $light;
+            }
+        }
+        }
+        .account_details-right .account_details-item:nth-child(1){
+            svg g path, p{
+                color: $gray;
+                fill: $gray;
+            }
+        }
+    }
+}

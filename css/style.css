@@ -1,0 +1,520 @@
+body.dark {
+  background-color: #141D2F;
+}
+body.dark .main .container .wrapper .header_content .header_content-title {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .header_content .mode_switcher:hover .mode_switcher-text {
+  color: #90A4D4;
+}
+body.dark .main .container .wrapper .header_content .mode_switcher:hover .mode_switcher-img g path {
+  fill: #90A4D4;
+}
+body.dark .main .container .wrapper .header_content .mode_switcher .mode_switcher-text {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .header_content .mode_switcher .mode_switcher-img g path {
+  fill: #FFFFFF;
+}
+body.dark .main .container .wrapper .header_content .search {
+  background-color: #1E2A47;
+}
+body.dark .main .container .wrapper .header_content .search {
+  box-shadow: none;
+}
+body.dark .main .container .wrapper .header_content .search #search_users {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .header_content .search #search_users::placeholder {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .main_content {
+  background-color: #1E2A47;
+}
+body.dark .main .container .wrapper .main_content .about_user .right_items .header_item .github_name, body.dark .main .container .wrapper .main_content .about_user .right_items .header_item .github_date {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .main_content .about_user .right_items .github_bio {
+  color: #697C9A;
+}
+body.dark .main .container .wrapper .main_content .about_user .account_info {
+  background-color: #141D2F;
+}
+body.dark .main .container .wrapper .main_content .about_user .account_info .account_info-item p, body.dark .main .container .wrapper .main_content .about_user .account_info .account_info-item h2 {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-left .account_details-item svg g path, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-left .account_details-item p, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-left .account_details-item a, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item svg g path, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item p, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item a, body.dark .about_user.active .account_details .account_details-left .account_details-item svg g path, body.dark .about_user.active .account_details .account_details-left .account_details-item p, body.dark .about_user.active .account_details .account_details-left .account_details-item a, body.dark .about_user.active .account_details .account_details-right .account_details-item svg g path, body.dark .about_user.active .account_details .account_details-right .account_details-item p, body.dark .about_user.active .account_details .account_details-right .account_details-item a {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-left .account_details-item .account_link, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item .account_link, body.dark .about_user.active .account_details .account_details-left .account_details-item .account_link, body.dark .about_user.active .account_details .account_details-right .account_details-item .account_link {
+  color: #FFFFFF;
+}
+body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item:nth-child(1) svg g path, body.dark .main .container .wrapper .main_content .about_user .account_details .account_details-right .account_details-item:nth-child(1) p, body.dark .about_user.active .account_details .account_details-right .account_details-item:nth-child(1) svg g path, body.dark .about_user.active .account_details .account_details-right .account_details-item:nth-child(1) p {
+  color: #697C9A;
+  fill: #697C9A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Space Mono";
+  background-color: #F6F8FF;
+  box-sizing: border-box;
+}
+
+.main .container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+.main .container .wrapper {
+  width: 100%;
+  max-width: 730px;
+}
+@media (max-width: 768px) {
+  .main .container .wrapper {
+    max-width: 573px;
+  }
+}
+.main .container .wrapper .header_content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 36px;
+  justify-content: space-between;
+}
+.main .container .wrapper .header_content .header_content-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2B3442;
+}
+.main .container .wrapper .header_content .mode_switcher {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+.main .container .wrapper .header_content .mode_switcher:hover .mode_switcher-text {
+  color: #2B3442;
+}
+.main .container .wrapper .header_content .mode_switcher:hover .mode_switcher-img g path {
+  fill: #2B3442;
+}
+.main .container .wrapper .header_content .mode_switcher .mode_switcher-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #697C9A;
+  letter-spacing: 2.5px;
+}
+.main .container .wrapper .header_content .search {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-area: "search";
+  display: flex;
+  align-items: center;
+  padding: 9.5px 10px 9.5px 32px;
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+@media (max-width: 500px) {
+  .main .container .wrapper .header_content .search {
+    padding: 7px 7px 7px 16px;
+  }
+}
+.main .container .wrapper .header_content .search #search_users {
+  width: 50%;
+  max-width: 300px;
+  caret-color: #0079FF;
+  margin-left: 24px;
+  border: none;
+  outline: none;
+  background: transparent;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2B3442;
+}
+@media (max-width: 500px) {
+  .main .container .wrapper .header_content .search #search_users {
+    margin-left: 9px;
+  }
+}
+.main .container .wrapper .header_content .search #search_users::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4B6A9B;
+}
+@media (max-width: 576px) {
+  .main .container .wrapper .header_content .search #search_users::placeholder {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .main .container .wrapper .header_content .search #search_users {
+    font-size: 13px;
+  }
+}
+.main .container .wrapper .header_content .search .no_result-text {
+  margin-left: auto;
+  margin-right: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #F74646;
+}
+.main .container .wrapper .header_content .search .search_btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 106px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0079FF;
+  transition: all 0.2s linear;
+}
+@media (max-width: 500px) {
+  .main .container .wrapper .header_content .search .search_btn {
+    font-size: 14px;
+    width: 84px;
+    height: 46px;
+  }
+}
+.main .container .wrapper .header_content .search .search_btn:hover {
+  background: #60ABFF;
+}
+.main .container .wrapper .main_content {
+  margin-top: 24px;
+  padding: 40px;
+  background-color: #FEFEFE;
+  border-radius: 15px;
+}
+.main .container .wrapper .main_content .about_user {
+  display: flex;
+  gap: 37px;
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user {
+    display: none;
+  }
+}
+.main .container .wrapper .main_content .about_user:nth-child(2) {
+  display: none;
+}
+.main .container .wrapper .main_content .about_user .left_items img {
+  width: 117px;
+  border-radius: 50%;
+}
+.main .container .wrapper .main_content .about_user .right_items {
+  width: 80%;
+}
+.main .container .wrapper .main_content .about_user .right_items .header_item {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main .container .wrapper .main_content .about_user .right_items .header_item .github_name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2B3442;
+  max-width: 300px;
+}
+.main .container .wrapper .main_content .about_user .right_items .header_item .github_date {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4B6A9B;
+}
+.main .container .wrapper .main_content .about_user .right_items .github_username {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0079FF;
+  margin: 16px 0 33px 0;
+}
+.main .container .wrapper .main_content .about_user .right_items .github_bio {
+  color: #4B6A9B;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4B6A9B;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_info {
+  display: flex;
+  margin-top: 35px;
+  padding: 14px 50px 17px 32px;
+  background-color: #F6F8FF;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user .right_items .account_info {
+    margin-top: 32px;
+  }
+}
+.main .container .wrapper .main_content .about_user .right_items .account_info .account_info-item p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4B6A9B;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_info .account_info-item h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2B3442;
+  margin-top: 10px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_info .account_info-item:nth-child(2) {
+  margin-left: 99px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_info .account_info-item:nth-child(3) {
+  margin-left: 82px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details {
+  display: flex;
+  margin-top: 37px;
+  gap: 62px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left, .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right {
+  width: 50%;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left .account_details-item, .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right .account_details-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left .account_details-item:nth-child(2), .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right .account_details-item:nth-child(2) {
+  margin-top: 21px;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left .account_details-item p, .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right .account_details-item p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4B6A9B;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left .account_details-item .account_link, .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right .account_details-item .account_link {
+  color: #4B6A9B;
+  text-decoration: none;
+}
+.main .container .wrapper .main_content .about_user .right_items .account_details .account_details-left .account_details-item .account_link:hover, .main .container .wrapper .main_content .about_user .right_items .account_details .account_details-right .account_details-item .account_link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active {
+    display: block;
+  }
+  .main .container .wrapper .main_content .about_user.active .about_user-inner {
+    display: flex;
+    gap: 41px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .left_items img {
+    width: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .header_item {
+    flex-direction: column;
+  }
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .header_item .github_name {
+    max-width: none;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .header_item .github_name {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .header_item .github_username {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .about_user-inner .header_item .github_username {
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .github_bio {
+    margin-top: 30px;
+    color: #4B6A9B;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4B6A9B;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .github_bio {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info {
+    display: flex;
+    margin-top: 35px;
+    padding: 14px 50px 17px 32px;
+    background-color: #F6F8FF;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_info {
+    justify-content: center;
+    padding: 20px 25px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #4B6A9B;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2B3442;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(2) {
+    margin-left: 99px;
+  }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(2) {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(2) {
+    margin-left: 33px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(3) {
+    margin-left: 82px;
+  }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(3) {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_info .account_info-item:nth-child(3) {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_details {
+    display: flex;
+    margin-top: 37px;
+    gap: 62px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_details {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item:nth-child(1), .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item:nth-child(1) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item:nth-child(2), .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item:nth-child(2) {
+    margin-top: 21px;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item:nth-child(2), .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item:nth-child(2) {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item p, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4B6A9B;
+  }
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item .account_link, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item .account_link {
+    color: #4B6A9B;
+    text-decoration: none;
+  }
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item .account_link:hover, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item .account_link:hover {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item .account_link, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item .account_link {
+    color: #FFFFFF;
+  }
+}
+.main .container .wrapper .main_content .about_user.hidden {
+  display: none;
+}
+
+.redder {
+  background-color: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

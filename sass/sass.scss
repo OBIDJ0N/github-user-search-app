@@ -1,0 +1,410 @@
+@import "breakpoints";
+@import "typography";
+@import "colors";
+@import "dark-mode";
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Space Mono";
+    background-color: $light-blue;
+    box-sizing: border-box;
+}
+
+.main {
+    .container {
+        max-width: 1470px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        .wrapper {
+            width: 100%;
+            max-width: 730px;
+            @include md{
+                max-width: 573px;
+            }
+            .header_content {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                row-gap: 36px;
+                justify-content: space-between;
+
+                .header_content-title {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    @include lg-text;
+                }
+
+                .mode_switcher {
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    user-select: none;
+
+                    &:hover {
+                        .mode_switcher-text {
+                            color: $dark-blue;
+                        }
+
+                        .mode_switcher-img g path {
+                            fill: $dark-blue;
+                        }
+                    }
+
+                    .mode_switcher-text {
+                        @include custom(13px, 700, $gray);
+                        letter-spacing: 2.5px;
+                    }
+
+
+                }
+
+                .search {
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-area: "search";
+                    display: flex;
+                    align-items: center;
+                    padding: 9.5px 10px 9.5px 32px;
+                    background-color: $white-smoke;
+                    border-radius: 15px;
+                    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+                    @include xs{
+                        padding: 7px 7px 7px 16px;
+                    }
+                    #search_users {
+                        width: 50%;
+                        max-width: 300px;
+                        caret-color: $blue;
+                        margin-left: 24px;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        letter-spacing: 1px;
+                        @include custom(18px, 400, $dark-blue);
+                        @include xs{
+                            margin-left: 9px;
+                        }
+                        &::placeholder {
+                            @include custom(18px, 400, $cornflowerblue);
+                            @include sm{
+                                font-size: 13px;
+                            }
+                        }
+                        @include sm{
+                            font-size: 13px;
+                        }
+                    }
+
+                    .no_result-text {
+                        margin-left: auto;
+                        margin-right: 24px;
+                        @include custom(15px, 700, $red)
+                    }
+
+                    .search_btn {
+                        @include custom(16px, 700, $light);
+                        cursor: pointer;
+                        width: 106px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: $blue;
+                        transition: all .2s linear;
+                        @include xs{
+                            font-size: 14px;
+                            width: 84px;
+                            height: 46px;
+                        }
+                        &:hover {
+                            background: #60ABFF;
+
+                        }
+                    }
+                }
+            }
+
+            .main_content {
+                margin-top: 24px;
+                padding: 40px;
+                background-color: $white-smoke;
+                border-radius: 15px;
+                .about_user {
+                    display: flex;
+                    gap: 37px;
+                    @include md{
+                        display: none;
+                    }
+                   &:nth-child(2){
+                    display: none;
+                   }
+                    .left_items {
+                        img {
+                            width: 117px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .right_items{
+                        width: 80%;
+                        .header_item{
+                            width: auto;
+                            display: flex;
+                            justify-content: space-between;
+                            .github_name {
+                                @include lg-text;
+                                max-width: 300px;
+                                @include md{
+                                    // order: 0;
+                                }
+                            }
+        
+                            .github_date {
+                                @include sm-text;
+                                @include md{
+                                }
+                            }
+                        }
+                        .github_username {
+                            @include custom(16px, 400, $blue);
+                            margin: 16px 0 33px 0;
+                            @include md{
+                            }
+                        }
+    
+                        .github_bio {
+                            color: $cornflowerblue;
+                            @include sm-text;
+                        }
+    
+                        .account_info {
+                            display: flex;
+                            margin-top: 35px;
+                            padding: 14px 50px 17px 32px;
+                            background-color: $light-blue;
+                            border-radius: 10px;
+                            @include md{
+                                margin-top: 32px;
+                            }
+                            .account_info-item {
+                                p {
+                                    @include xs-text;
+                                }
+    
+                                h2 {
+                                    @include md-text;
+                                    margin-top: 10px;
+                                }
+                                &:nth-child(2){
+                                    margin-left: 99px;
+                                }
+                                &:nth-child(3){
+                                    margin-left: 82px;
+                                }
+                            }
+                        }
+    
+                        .account_details {
+                            display: flex;
+                            margin-top: 37px;
+                            gap: 62px;
+                            .account_details-left, .account_details-right{
+                                width: 50%;
+                                .account_details-item {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 16px;
+                                    &:nth-child(2){
+                                        margin-top: 21px;
+                                    }
+                                    img {
+                                    }
+        
+                                    p {
+                                        @include sm-text;
+                                    }
+        
+                                    .account_location-name {}
+        
+                                    .account_twitter-username {}
+        
+                                    .account_link {
+                                        color: $cornflowerblue;
+                                        text-decoration: none;
+        
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+        
+                                    .account_office-name {}
+                                }
+                               
+                            }
+                           
+                        }
+                    }
+                }
+                .about_user.active{
+                    @include md{
+                        display: block;
+                        .about_user-inner{
+                            display: flex;
+                            gap: 41px;
+                            @include xs{
+                                gap: 20px;
+                            }
+                            .left_items img{
+                                @include xs{
+                                    width: 70px;
+                                }
+                            }
+                            .header_item{
+                                flex-direction: column;
+                                .github_name{
+                                    max-width: none;
+                                    @include xs{
+                                        font-size: 16px;
+                                    }
+                                }
+                                .github_username{
+                                    margin: 15px 0;
+                                    @include xs{
+                                        margin: 10px 0 15px 0;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        .github_bio {
+                            margin-top: 30px;
+                            color: $cornflowerblue;
+                            @include sm-text;
+                            @include xs{
+                                font-size: 13px;
+                            }
+                        }
+                        .account_info {
+                            display: flex;
+                            margin-top: 35px;
+                            padding: 14px 50px 17px 32px;
+                            background-color: $light-blue;
+                            border-radius: 10px;
+                            @include md{
+                                margin-top: 32px;
+                            }
+                            @include xs{
+                               justify-content: center;
+                                padding: 20px 25px;
+                            }
+                            .account_info-item {
+                                p {
+                                    @include xs-text;
+                                    @include xs{
+                                        font-size: 11px;
+                                    }
+                                }
+    
+                                h2 {
+                                    @include md-text;
+                                    margin-top: 10px;
+                                    @include xs{
+                                        font-size: 16px;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    margin-left: 99px;
+                                    @include sm{
+                                        margin-left: 80px;
+                                    }
+                                    @include xs{
+                                        margin-left: 33px;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    margin-left: 82px;
+                                    @include sm{
+                                        margin-left: 70px;
+                                    }
+                                    @include xs{
+                                        margin-left: 24px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .account_details {
+                            display: flex;
+                            margin-top: 37px;
+                            gap: 62px;
+                            @include xs{
+                                flex-direction: column;
+                                gap: 0;
+                            }
+                            .account_details-left, .account_details-right{
+                                width: 50%;
+                                @include xs{
+                                    width: 100%;
+                                }
+                                .account_details-item {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 16px;
+                                    &:nth-child(1){
+                                        @include xs{
+                                            margin-top: 15px;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        margin-top: 21px;
+                                        @include xs{
+                                            margin-top: 15px;
+                                        }
+                                    }
+                                    p {
+                                        @include sm-text;
+                                    }
+                                    .account_link {
+                                        color: $cornflowerblue;
+                                        text-decoration: none;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                        @include xs{
+                                            color: $light;
+                                        }
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+                .about_user.hidden{
+                    display: none;
+                }
+                
+            }
+            
+        }
+    }
+}
+.redder{
+    background-color: red($color: #000000);
+}
