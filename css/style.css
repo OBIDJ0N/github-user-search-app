@@ -504,11 +504,6 @@ body {
     text-decoration: underline;
   }
 }
-@media (max-width: 768px) and (max-width: 500px) {
-  .main .container .wrapper .main_content .about_user.active .account_details .account_details-left .account_details-item .account_link, .main .container .wrapper .main_content .about_user.active .account_details .account_details-right .account_details-item .account_link {
-    color: #FFFFFF;
-  }
-}
 .main .container .wrapper .main_content .about_user.hidden {
   display: none;
 }

@@ -386,9 +386,6 @@ body {
                                         &:hover {
                                             text-decoration: underline;
                                         }
-                                        @include xs{
-                                            color: $light;
-                                        }
                                     }
                                 }
                                
