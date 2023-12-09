@@ -1,6 +1,7 @@
 "use strict";
 const modSwitcher = document.querySelector(".mode_switcher"),
     mode_switcher_img = document.querySelector(".mode_switcher-img"),
+    mode_switcher_text = document.querySelector(".mode_switcher-text"),
     search = document.querySelector(".search"),
     searchInpt = document.querySelector("#search_users"),
     noResult = document.querySelector(".no_result-text"),
@@ -24,6 +25,7 @@ modSwitcher.addEventListener("click", () => {
     </g>
     </svg>
     `; 
+    mode_switcher_text.innerHTML = "LIGHT";
     } else{
         mode_switcher_img.innerHTML = `<svg width="20" class="mode_switcher-img" height="20" viewBox="0 0 20 20" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +35,7 @@ modSwitcher.addEventListener("click", () => {
                 fill="#697C9A" />
         </g>
     </svg>`;
+        mode_switcher_text.innerHTML = "DARK";
     }
 });
 
