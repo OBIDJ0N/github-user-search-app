@@ -233,17 +233,9 @@ body {
                                     &:nth-child(2){
                                         margin-top: 21px;
                                     }
-                                    img {
-                                    }
-        
                                     p {
                                         @include sm-text;
                                     }
-        
-                                    .account_location-name {}
-        
-                                    .account_twitter-username {}
-        
                                     .account_link {
                                         color: $cornflowerblue;
                                         text-decoration: none;
@@ -252,8 +244,6 @@ body {
                                             text-decoration: underline;
                                         }
                                     }
-        
-                                    .account_office-name {}
                                 }
                                
                             }
